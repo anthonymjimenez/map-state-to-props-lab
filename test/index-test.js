@@ -62,6 +62,7 @@ describe('the application', () => {
         <App />
       </Provider>
     );
+    console.log(wrapper)
     expect(wrapper.find(Users).find('li').length).to.equal(2);
     expect(wrapper.find(Users).html()).to.include('Maxwell')
     expect(wrapper.find(Users).html()).to.include('Fran')
